@@ -1,16 +1,29 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <SuppliersList/>
+  <SuppliersMap/>
+  <button @click="onSuppliersListClick()">click Suppliers</button>
+  <button @click="onMapClick()">click Map</button>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SuppliersList from './components/SuppliersList.vue'
+import SuppliersMap from './components/SuppliersMap.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SuppliersList,
+    SuppliersMap
+  },
+  methods:{
+    onSuppliersListClick(){
+    alert("SuppliersList")
+  },
+  onMapClick(){
+    alert("SuppliersMap")
   }
+}
 }
 </script>
 
