@@ -1,30 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <SuppliersList/>
-  <SuppliersMap/>
-  <button @click="onSuppliersListClick()">click Suppliers</button>
-  <button @click="onMapClick()">click Map</button>
+  <div class="container-fluid">
+    <img alt="Vue logo" src="./assets/logo.png" /><br />
+    <button @click="onSuppliersListClick()">
+      Consulter la liste des fournisseurs
+    </button>
+    <button @click="onMapClick()">Voir la carte</button><br />
+    <router-link to="/">Home</router-link>
+    <router-link to="/SuppliersList">SuppliersList</router-link>
+    <router-link to="/SuppliersMap">SuppliersMap</router-link>
+    <router-link to="/supplier">Supplier</router-link>
+    <router-view />
+  </div>
 </template>
 
 <script>
-import SuppliersList from './components/SuppliersList.vue'
-import SuppliersMap from './components/SuppliersMap.vue'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 
 export default {
-  name: 'App',
-  components: {
-    SuppliersList,
-    SuppliersMap
+  name: "App",
+  methods: {
+    onSuppliersListClick() {
+      alert("SuppliersList");
+    },
+    onMapClick() {
+      alert("SuppliersMap");
+    },
   },
-  methods:{
-    onSuppliersListClick(){
-    alert("SuppliersList")
-  },
-  onMapClick(){
-    alert("SuppliersMap")
-  }
-}
-}
+};
 </script>
 
 <style>
@@ -35,5 +38,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.router-link-active {
+  color: red;
 }
 </style>

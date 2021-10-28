@@ -6,11 +6,8 @@
 
 <script>
 export default {
-  name: 'SuppliersList',
-  props: {
-    msg: String
-  }
-}
+  name: "SuppliersList",
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

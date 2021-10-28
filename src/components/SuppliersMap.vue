@@ -7,9 +7,6 @@
 <script>
 export default {
   name: 'SuppliersMap',
-  props: {
-    msg: String
-  }
 }
 </script>
 
