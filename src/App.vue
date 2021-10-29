@@ -1,21 +1,20 @@
 <template>
-  <div class="container-fluid">
+  <div class="container">
     <img alt="Vue logo" src="./assets/logo.png" /><br />
-    <button @click="onSuppliersListClick()">
+    <h1>Que voulez vous faire?</h1>
+    <!-- <button @click="onSuppliersListClick()">
       Consulter la liste des fournisseurs
     </button>
-    <button @click="onMapClick()">Voir la carte</button><br />
-    <router-link to="/">Home</router-link>
-    <router-link to="/SuppliersList">SuppliersList</router-link>
-    <router-link to="/SuppliersMap">SuppliersMap</router-link>
+    <button @click="onMapClick()">Voir la carte</button><br /> -->
+    <router-link to="/">Home</router-link> |
+    <router-link to="/SuppliersList">SuppliersList</router-link> |
+    <router-link to="/SuppliersMap">SuppliersMap</router-link> |
     <router-link to="/supplier">Supplier</router-link>
     <router-view />
   </div>
 </template>
 
 <script>
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
 
 export default {
   name: "App",

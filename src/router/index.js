@@ -1,37 +1,19 @@
-// import deux methodes pour que le code peut marcher
-import {
-    createRouter,
-    createWebHistory
-} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
-// chemins vers les composants (.vue)
-import SuppliersList from "../components/SuppliersList";
-import SuppliersMap from "../components/SuppliersMap";
-import Supplier from "../components/Supplier";
-import Home from "../components/Home";
+import SuppliersList from "../components/SuppliersList.vue"
+import SuppliersMap from "../components/SuppliersMap.vue"
+import Supplier from "../components/Supplier"
+import Home from "../components/Home.vue"
 
 const router = createRouter({
-    routes: [{
-            path: "/SuppliersList",
-            component: SuppliersList
-        },
-        {
-            path: "/SuppliersMap",
-            component: SuppliersMap
-        },
-        {
-            path: "/supplier",
-            component: Supplier
-        },
-        {
-            path: "/",
-            component: Home
-        },
-
-
+    routes: [
+        { path: "/", component: Home },
+        { path: "/SuppliersList", component: SuppliersList },
+        { path: "/SuppliersMap", component: SuppliersMap },
+        { path: "/supplier", component: Supplier },
+        { path: "/suppliers", component: Supplier },
     ],
-
     history: createWebHistory()
 })
-// le router est pret pour etre utilisé
+
 export default router

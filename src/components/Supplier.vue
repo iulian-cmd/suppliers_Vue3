@@ -1,23 +1,17 @@
 <template>
   <div class="supp">
-    <h1>{{ name }}</h1>
-    <h3 v-if="status" id="red">A du stock? KO</h3>
+    qgqgdsg
+    <h1>Liste des fournisseurs</h1>
+    <h2>{{supplier.name}}</h2>
+    <h3 v-if="supplier.status" id="red">A du stock? KO</h3>
     <h3 v-else id="green">A du stock? OK</h3>
-    <h5>
-      Date de derniere relevé des stocks: {{ checkedAt.toLocaleString() }}
-    </h5>
+    <h5>Date de derniere relevé des stocks: {{supplier.checkedAt}}</h5>
   </div>
 </template>
 <script>
 export default {
-  name: "SuppliersList",
-  data() {
-    return {
-      name: "Mon fournisseur",
-      status: false, // est ce qu'il y a du stock
-      checkedAt: new Date(), // date de la dernière mise à jour du stock
-    };
-  },
+  name: "Supplier",
+  props: ["supplier"]
 };
 </script>
 
