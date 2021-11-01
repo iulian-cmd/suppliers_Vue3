@@ -8,14 +8,13 @@
     <button @click="onMapClick()">Voir la carte</button><br /> -->
     <router-link to="/">Home</router-link> |
     <router-link to="/SuppliersList">SuppliersList</router-link> |
-    <router-link to="/SuppliersMap">SuppliersMap</router-link> |
-    <router-link to="/supplier">Supplier</router-link>
+    <router-link to="/SuppliersMap">SuppliersMap</router-link>
+    <!-- <router-link to="/supplier">Supplier</router-link> -->
     <router-view />
   </div>
 </template>
 
 <script>
-
 export default {
   name: "App",
   methods: {
