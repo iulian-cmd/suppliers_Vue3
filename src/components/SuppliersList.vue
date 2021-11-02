@@ -14,7 +14,7 @@ import Supplier from "./Supplier.vue";
 
 export default {
   name: "SuppliersList",
-  components: {
+  component: {
     Supplier,
   },
   data() {
