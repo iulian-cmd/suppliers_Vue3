@@ -4,9 +4,8 @@
       <img alt="Vue logo" src="./assets/logo.png" /><br />
       <h1>Que voulez vous faire?</h1>
       <!-- <button @click="onSuppliersListClick()">
-      Consulter la liste des fournisseurs
-    </button> -->
-      <!-- <SuppliersMap /> -->
+      Consulter la liste des fournisseurs    </button> -->
+    
       <!-- <button @click="onMapClick()">Voir la carte</button><br /> -->
       <router-link to="/">Home</router-link> |
       <router-link to="/SuppliersList">SuppliersList</router-link> |
@@ -18,13 +17,13 @@
 </template>
 
 <script>
-import SuppliersMap from "./components/SuppliersMap";
+import SuppliersMap from "./components/SuppliersMap.vue"
+
 
 export default {
   name: "App",
   component: {
     SuppliersMap,
-    
   },
   // methods: {
   //   onSuppliersListClick() {
@@ -34,6 +33,13 @@ export default {
   //     alert("SuppliersMap");
   //   },
   // },
+  
+  // methods: {
+  //   getList() {
+  //     this.axios.get(api).then((response) => {
+  //       console.log(response.data)
+  //     })
+    // }
 };
 </script>
 

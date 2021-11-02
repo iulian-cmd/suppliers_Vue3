@@ -1,14 +1,12 @@
 <template>
   <div class="container main_supp">
     <div class="supp">
-      this is from suplier's component
-      <h1>Liste des fournisseurs</h1>
-      <h2>{{ supplier.name }}</h2>
-      <h3 v-if="supplier.status" id="red">A du stock? KO</h3>
+      <!-- this is from suplier's component -->
+      <h2>{{ name }}</h2>
+      <h3 v-if="status" id="red">A du stock? KO</h3>
       <h3 v-else id="green">A du stock? OK</h3>
       <h5>
-        Date de derniere relevé des stocks:
-        {{ timeFormat(supplier.checkedAt) }}
+        Date de derniere relevé des stocks: {{ timeFormat }}
       </h5>
     </div>
   </div>
@@ -18,7 +16,7 @@ import { format } from "timeago.js";
 
 export default {
   name: "Supplier",
-  props: ["supplier"],
+  props: ["name","status", "checkedAt"],
 
   // meta:{
   //   title:"Suppliers"
@@ -26,7 +24,7 @@ export default {
   computed: {
     // a computed getter
     timeFormat() {
-      return format(this.supplier.checkedAt); //je l'utilise dans le template en haut
+      return format(this.checkedAt); //je l'utilise dans le template en haut
     },
   },
 };

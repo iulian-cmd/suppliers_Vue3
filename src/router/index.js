@@ -24,7 +24,7 @@ const router = createRouter({
         {
             path: "/supplier",
             component: Supplier
-        },
+        }
         // {
         //     path: "/suppliers",
         //     component: Supplier
