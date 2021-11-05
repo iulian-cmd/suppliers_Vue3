@@ -1,6 +1,14 @@
 <template>
   <div class="list_supp">
-    <h1>Liste des fournisseurs</h1>
+    <table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+          <th class="cell">Supplier</th>
+          <th class="cell">Stock Status</th>
+          <th class="cell">Checked at</th>
+        </tr>
+      </thead>
+    </table>
     <Supplier
       v-for="supplier in suppliers"
       :key="supplier.id"
@@ -53,5 +61,9 @@ a {
 
 .list_supp {
   background-color: #5aa9e6;
+}
+
+.cell{
+  width: 33%;
 }
 </style>

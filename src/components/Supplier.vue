@@ -1,14 +1,15 @@
 <template>
-  <div class="container main_supp">
-    <div class="supp">
-      <!-- this is from suplier's component -->
-      <h2>{{ name }}</h2>
-      <h3 v-if="status" id="red">A du stock? KO</h3>
-      <h3 v-else id="green">A du stock? OK</h3>
-      <h5>
-        Date de derniere relevé des stocks: {{ timeFormat }}
-      </h5>
-    </div>
+<div>
+    <table class="list table table-striped table-bordered">
+      <tbody>
+      <tr>
+      <td class="cell">{{ name }}</td>
+      <td class="cell"><p v-if="status" id="red">Has stock? KO</p>
+          <p v-else id="green">Has stock? OK</p></td>
+      <td class="cell">{{ timeFormat }}</td>
+    </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 <script>

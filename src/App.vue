@@ -1,8 +1,6 @@
 <template>
   <div class="container">
     <div class="routerlink">
-      <img alt="Vue logo" src="./assets/logo.png" /><br />
-      <h1>Que voulez vous faire?</h1>
       <!-- <button @click="onSuppliersListClick()">
       Consulter la liste des fournisseurs    </button> -->
     
