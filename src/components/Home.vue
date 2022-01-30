@@ -1,5 +1,5 @@
 <template>
-  <div class="blockquote container-fluid text-justify font-weight-light">
+  <div class="blockquote container-fluid text-justify font-weight-light mt-5">
     <h1>App Suppliers and Map</h1>
 <p><span id="redcolor">Spirulina</span>  is a type of blue-green algae that contains a number of nutrients, including B vitamins, beta-carotene, and vitamin E. Spirulina also contains antioxidants, minerals, chlorophyll, and phycocyanobilin and is commonly used as a source of vegan protein.</p>
 <p><span id="redcolor">What Is Spirulina Used For?</span>

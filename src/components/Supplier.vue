@@ -1,16 +1,10 @@
 <template>
-<div>
-    <table class="list table table-striped table-bordered">
-      <tbody>
-      <tr>
-      <td class="cell">{{ name }}</td>
-      <td class="cell"><p v-if="status" id="red">Has stock? KO</p>
-          <p v-else id="green">Has stock? OK</p></td>
-      <td class="cell">{{ timeFormat }}</td>
-    </tr>
-      </tbody>
-    </table>
-  </div>
+        <tr>
+            <td>{{ name }}</td>
+            <td><p v-if="status" id="red">OUT OF STOCK</p>
+                <p v-else id="green">AVAILABLE</p></td>
+            <td>{{ timeFormat }}</td>
+        </tr>
 </template>
 <script>
 import { format } from "timeago.js";

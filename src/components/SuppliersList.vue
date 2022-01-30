@@ -1,22 +1,23 @@
 <template>
-  <div class="list_supp">
-    <table class="table table-striped table-bordered">
-    <thead>
-        <tr>
-          <th class="cell">Supplier</th>
-          <th class="cell">Stock Status</th>
-          <th class="cell">Checked at</th>
+ 
+		<table class="table table-dark table-striped mt-5 mb-1">
+			<thead>
+				<tr>
+          <th>Supplier</th>
+          <th>Stock Status</th>
+          <th>Checked at</th>
         </tr>
       </thead>
-    </table>
+      <tbody>
     <Supplier
       v-for="supplier in suppliers"
       :key="supplier.id"
       :name="supplier.name"
-      :checkedAt="supplier.checkedAt"
       :status="supplier.status"
+      :checkedAt="supplier.checkedAt"
     />
-  </div>
+</tbody>
+</table>
 </template>
 
 <script>
