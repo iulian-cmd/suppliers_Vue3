@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+      <header class="py-5 bg-image-full" style="background-image: url('./assets/unsplashback001.jpg')">
+            <div class="text-center my-5">
+                <img class="img-fluid rounded-circle mb-4" src="./assets/Spirulina_800x365.jpg" alt="..." />
     <div class="routerlink">
       <!-- <button @click="onSuppliersListClick()">
       Consulter la liste des fournisseurs    </button> -->
@@ -11,6 +14,8 @@
       <!-- <router-link to="/supplier">Supplier</router-link> -->
       <router-view />
     </div>
+            </div>
+        </header>
   </div>
 </template>
 
